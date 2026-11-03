@@ -1,0 +1,6 @@
+{
+  "name": "Guia Estúdio 2D com Claude AI - Página de Vendas",
+  "description": "Página de vendas de alta conversão para o Guia Estúdio 2D com Claude AI. Aprenda a automatizar produção de vídeos animados 2D com IA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

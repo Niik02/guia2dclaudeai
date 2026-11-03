@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #090A0F;
+    color: #FFFFFF;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+/* Custom cinematic glow & studio aesthetic utility classes */
+.glow-amber-subtle {
+  box-shadow: 0 0 40px -10px rgba(255, 196, 0, 0.15);
+}
+
+.glow-orange-subtle {
+  box-shadow: 0 0 40px -10px rgba(255, 107, 26, 0.2);
+}
+
+.glow-amber-border {
+  border-color: rgba(255, 196, 0, 0.35);
+  box-shadow: 0 0 20px -3px rgba(255, 196, 0, 0.2);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FFF1B8 0%, #FFC400 50%, #FF6B1A 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-radial-glow {
+  background: radial-gradient(circle at 50% 0%, rgba(255, 196, 0, 0.08) 0%, rgba(255, 107, 26, 0.03) 40%, transparent 70%);
+}
+
+.bg-radial-bottom-glow {
+  background: radial-gradient(circle at 50% 100%, rgba(255, 196, 0, 0.1) 0%, rgba(255, 107, 26, 0.05) 50%, transparent 80%);
+}
+
