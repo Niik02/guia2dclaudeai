@@ -78,12 +78,12 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ onCtaClick }) => {
                 type="button"
                 className="group flex w-full sm:w-auto items-center justify-center gap-3 rounded-xl bg-gradient-to-r from-[#FFC400] via-[#FFB700] to-[#FF6B1A] px-8 py-4 text-base font-black text-[#090A0F] shadow-xl shadow-[#FFC400]/25 hover:shadow-2xl hover:shadow-[#FFC400]/35 hover:scale-[1.02] active:scale-[0.99] transition-all cursor-pointer"
               >
-                <span className="tracking-wide">QUERO ACESSAR O GUIA</span>
+                <span className="tracking-wide">QUERO ACESSAR O GUIA · R$ 9,99</span>
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1 stroke-[2.5]" />
               </button>
 
               <span className="text-xs text-[#B8B8C2] pl-1">
-                Material digital em PDF. Acesso imediato após a confirmação.
+                Apenas R$ 9,99 em pagamento único. Material digital em PDF com acesso imediato.
               </span>
             </div>
           </div>

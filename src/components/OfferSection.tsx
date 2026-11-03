@@ -93,28 +93,24 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onCtaClick }) => {
                 Investimento no Material
               </span>
 
-              {/* Price display: strictly follows prompt (editable via config without inventing values) */}
-              <div className="my-5 w-full py-3 px-4 rounded-xl border border-dashed border-[#FFC400]/30 bg-[#111522]/60">
+              {/* Price display */}
+              <div className="my-5 w-full py-4 px-4 rounded-xl border border-[#FFC400]/40 bg-[#111522]/90 shadow-inner">
                 {PRICE_CONFIG.hasPriceSet && PRICE_CONFIG.currentPrice ? (
                   <div>
-                    {PRICE_CONFIG.originalPrice && (
-                      <span className="text-xs text-[#B8B8C2] line-through block">
-                        De {PRICE_CONFIG.currencySymbol} {PRICE_CONFIG.originalPrice}
-                      </span>
-                    )}
-                    <div className="flex items-baseline justify-center gap-1">
-                      <span className="text-sm font-bold text-[#FFC400]">
+                    <span className="text-[11px] font-semibold text-[#B8B8C2] uppercase tracking-wider block mb-1">
+                      Por apenas
+                    </span>
+                    <div className="flex items-baseline justify-center gap-1.5">
+                      <span className="text-lg font-extrabold text-[#FFC400]">
                         {PRICE_CONFIG.currencySymbol}
                       </span>
-                      <span className="text-4xl font-extrabold text-white tracking-tight font-mono">
+                      <span className="text-5xl font-black text-white tracking-tight font-mono">
                         {PRICE_CONFIG.currentPrice}
                       </span>
                     </div>
-                    {PRICE_CONFIG.installments && (
-                      <span className="text-xs text-[#B8B8C2] mt-1 block">
-                        ou {PRICE_CONFIG.installments}
-                      </span>
-                    )}
+                    <span className="text-xs text-[#B8B8C2] mt-1.5 block">
+                      Pagamento único · Acesso imediato ao Material
+                    </span>
                   </div>
                 ) : (
                   <div>
@@ -134,13 +130,13 @@ export const OfferSection: React.FC<OfferSectionProps> = ({ onCtaClick }) => {
                 type="button"
                 className="w-full group flex items-center justify-center gap-2.5 rounded-xl bg-gradient-to-r from-[#FFC400] via-[#FFB700] to-[#FF6B1A] px-6 py-4 text-base font-black text-[#090A0F] shadow-lg shadow-[#FFC400]/20 hover:shadow-xl hover:shadow-[#FFC400]/30 hover:scale-[1.02] active:scale-[0.99] transition-all cursor-pointer"
               >
-                <span className="tracking-wide">QUERO MEU GUIA ESTÚDIO 2D</span>
+                <span className="tracking-wide">QUERO MEU GUIA POR R$ 9,99</span>
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1 stroke-[2.5]" />
               </button>
 
-              {/* Subtext strictly required by prompt */}
+              {/* Subtext */}
               <p className="mt-4 text-xs text-[#B8B8C2] leading-tight">
-                Produto digital. Acesso ao material após a confirmação da compra.
+                Produto digital em PDF. Acesso imediato após a confirmação da compra.
               </p>
             </div>
           </div>

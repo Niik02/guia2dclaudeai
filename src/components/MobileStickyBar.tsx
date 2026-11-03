@@ -33,10 +33,10 @@ export const MobileStickyBar: React.FC<MobileStickyBarProps> = ({ onCtaClick }) 
           </span>
           <div className="truncate text-left">
             <p className="text-[11px] font-bold text-white leading-tight truncate">
-              Guia Estúdio 2D
+              Guia Estúdio 2D <span className="text-[#FFC400]">· R$ 9,99</span>
             </p>
             <p className="text-[9px] text-[#B8B8C2] truncate">
-              Manual em PDF com IA
+              Acesso digital imediato em PDF
             </p>
           </div>
         </div>
@@ -44,9 +44,9 @@ export const MobileStickyBar: React.FC<MobileStickyBarProps> = ({ onCtaClick }) 
         <button
           onClick={onCtaClick}
           type="button"
-          className="inline-flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-[#FFC400] to-[#FF6B1A] px-4 py-2.5 text-xs font-black text-[#090A0F] shadow-md shadow-[#FFC400]/20 active:scale-[0.98] transition-all whitespace-nowrap shrink-0 cursor-pointer"
+          className="inline-flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-[#FFC400] to-[#FF6B1A] px-3.5 py-2.5 text-xs font-black text-[#090A0F] shadow-md shadow-[#FFC400]/20 active:scale-[0.98] transition-all whitespace-nowrap shrink-0 cursor-pointer"
         >
-          <span>QUERO O GUIA</span>
+          <span>QUERO POR R$ 9,99</span>
           <ArrowRight className="h-3.5 w-3.5 stroke-[2.5]" />
         </button>
       </div>

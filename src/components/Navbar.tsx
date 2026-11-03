@@ -63,7 +63,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onCtaClick }) => {
             type="button"
             className="inline-flex items-center gap-2 rounded-lg bg-[#FFC400] px-4 py-2 text-xs sm:text-sm font-bold text-[#090A0F] shadow-md shadow-[#FFC400]/10 hover:bg-[#FFD033] hover:shadow-lg hover:shadow-[#FFC400]/20 active:scale-[0.98] transition-all whitespace-nowrap shrink-0 cursor-pointer"
           >
-            <span>Quero o Guia</span>
+            <span>Quero o Guia · R$ 9,99</span>
             <ArrowRight className="h-3.5 w-3.5 stroke-[2.5]" />
           </button>
         </div>

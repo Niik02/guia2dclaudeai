@@ -67,7 +67,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
 
               <span className="text-xs text-[#B8B8C2]/90 flex items-center gap-1.5 pl-1">
                 <Layers className="h-3.5 w-3.5 text-[#FFC400]" />
-                Produto digital em PDF. Acesso ao material após a compra.
+                Apenas R$ 9,99 · Produto digital em PDF. Acesso imediato após a compra.
               </span>
             </div>
           </div>

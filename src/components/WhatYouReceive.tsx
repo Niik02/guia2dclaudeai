@@ -120,14 +120,14 @@ export const WhatYouReceive: React.FC<WhatYouReceiveProps> = ({ onCtaClick }) =>
               </p>
               <div className="mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                 <span className="text-xs text-[#B8B8C2]">
-                  Instruções organizadas com rigor técnico para execução direta.
+                  Instruções organizadas com rigor técnico por apenas <strong className="text-white">R$ 9,99</strong>.
                 </span>
                 <button
                   onClick={onCtaClick}
                   type="button"
                   className="inline-flex items-center gap-2 text-xs sm:text-sm font-bold text-[#FFC400] hover:text-[#FFD033] transition-colors whitespace-nowrap cursor-pointer"
                 >
-                  <span>Garantir meu acesso</span>
+                  <span>Garantir meu acesso por R$ 9,99</span>
                   <ArrowRight className="h-4 w-4" />
                 </button>
               </div>

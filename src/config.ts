@@ -13,13 +13,12 @@ export const CHECKOUT_URL: string = "https://go.perfectpay.com.br/PPU38CQHFQG";
 // Insira o valor do produto quando estiver definido.
 // Deixe vazio ou configure conforme sua estratégia comercial.
 export const PRICE_CONFIG = {
-  // Se definido como false, a página exibe uma área pronta para o valor com indicação elegante
   // Se definido como true, exibe os valores preenchidos abaixo.
-  hasPriceSet: false,
+  hasPriceSet: true,
   currencySymbol: "R$",
-  currentPrice: "", // Ex: "97,00" ou "147,00"
+  currentPrice: "9,99",
   originalPrice: "", // Opcional para ancoragem se desejar no futuro
-  installments: "", // Ex: "12x de R$ 9,74"
+  installments: "", // Ex: "ou 2x no cartão"
   badge: "Lançamento Exclusivo",
   guaranteeDays: 7,
 };
