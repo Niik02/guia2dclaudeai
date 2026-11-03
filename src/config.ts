@@ -7,8 +7,7 @@
 
 // 1. LINK DE CHECKOUT
 // Quando você tiver o link da sua plataforma (Hotmart, Kiwify, Eduzz, Stripe, etc.),
-// cole a URL completa abaixo, por exemplo: "https://pay.kiwify.com.br/exemplo"
-export const CHECKOUT_URL: string = "";
+export const CHECKOUT_URL: string = "https://go.perfectpay.com.br/PPU38CQHFQG";
 
 // 2. CONFIGURAÇÃO DE PREÇO
 // Insira o valor do produto quando estiver definido.
