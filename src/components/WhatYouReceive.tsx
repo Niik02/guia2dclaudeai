@@ -1,5 +1,6 @@
 import React from 'react';
 import { BookOpen, Sliders, Terminal, FolderTree, CheckSquare, Wrench, ArrowRight } from 'lucide-react';
+import guideMockupImg from '../assets/images/guide_digital_mockup_1793717757021.jpg';
 
 interface WhatYouReceiveProps {
   onCtaClick: () => void;
@@ -64,13 +65,18 @@ export const WhatYouReceive: React.FC<WhatYouReceiveProps> = ({ onCtaClick }) =>
               <div className="absolute -inset-4 rounded-3xl bg-gradient-to-tr from-[#FFC400]/25 via-[#FF6B1A]/15 to-transparent blur-2xl pointer-events-none" />
 
               <div className="relative overflow-hidden rounded-2xl border border-[#FFC400]/40 bg-[#111522] shadow-2xl shadow-black">
-                <img
-                  src="/src/assets/images/guide_digital_mockup_1793717757021.jpg"
-                  alt="Mockup do Guia Estúdio 2D com Claude AI em formato digital 3D"
-                  referrerPolicy="no-referrer"
-                  className="w-full h-auto object-cover transform hover:scale-[1.02] transition-transform duration-500"
-                  loading="lazy"
-                />
+                <div className="aspect-[4/3] w-full bg-[#111522] overflow-hidden">
+                  <img
+                    src={guideMockupImg}
+                    onError={(e) => {
+                      e.currentTarget.src = '/images/guide_digital_mockup.jpg';
+                    }}
+                    alt="Mockup do Guia Estúdio 2D com Claude AI em formato digital 3D"
+                    referrerPolicy="no-referrer"
+                    className="w-full h-full object-cover transform hover:scale-[1.02] transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </div>
 
                 <div className="p-4 border-t border-[#202538] bg-[#0B0D14]/90 flex items-center justify-between">
                   <div>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, Film, Sparkles, CheckCircle2 } from 'lucide-react';
+import mascotCtaImg from '../assets/images/mascot_studio_cta_1793717757219.jpg';
 
 interface FinalCtaProps {
   onCtaClick: () => void;
@@ -18,12 +19,15 @@ export const FinalCta: React.FC<FinalCtaProps> = ({ onCtaClick }) => {
             <div className="relative mx-auto max-w-lg lg:max-w-none">
               <div className="absolute -inset-2 rounded-3xl bg-gradient-to-tr from-[#FFC400]/30 via-[#FF6B1A]/20 to-transparent blur-xl pointer-events-none" />
 
-              <div className="relative overflow-hidden rounded-2xl border border-[#FFC400]/40 bg-[#111522] shadow-2xl shadow-black">
+              <div className="relative overflow-hidden rounded-2xl border border-[#FFC400]/40 bg-[#111522] shadow-2xl shadow-black aspect-[16/9] min-h-[260px] sm:min-h-[300px]">
                 <img
-                  src="/src/assets/images/mascot_studio_cta_1793717757219.jpg"
+                  src={mascotCtaImg}
+                  onError={(e) => {
+                    e.currentTarget.src = '/images/mascot_studio_cta.jpg';
+                  }}
                   alt="Mascote de capacete preto e jaqueta verde na sala de controle do estúdio de animação"
                   referrerPolicy="no-referrer"
-                  className="w-full h-auto object-cover transform hover:scale-[1.02] transition-transform duration-500"
+                  className="w-full h-full object-cover transform hover:scale-[1.02] transition-transform duration-500"
                   loading="lazy"
                 />
 

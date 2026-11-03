@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, CheckCircle2, Film, Sparkles, Layers } from 'lucide-react';
+import mascotHeroImg from '../assets/images/mascot_studio_hero_1793717757394.jpg';
 
 interface HeroProps {
   onCtaClick: () => void;
@@ -79,12 +80,15 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
               <div className="absolute -inset-1.5 rounded-2xl bg-gradient-to-tr from-[#FFC400]/30 via-[#FF6B1A]/20 to-transparent blur-md" />
 
               {/* Main Image Container */}
-              <div className="relative overflow-hidden rounded-2xl border border-[#FFC400]/40 bg-[#111522] shadow-2xl shadow-black/80">
+              <div className="relative overflow-hidden rounded-2xl border border-[#FFC400]/40 bg-[#111522] shadow-2xl shadow-black/80 aspect-[16/9] min-h-[260px] sm:min-h-[300px]">
                 <img
-                  src="/src/assets/images/mascot_studio_hero_1793717757394.jpg"
+                  src={mascotHeroImg}
+                  onError={(e) => {
+                    e.currentTarget.src = '/images/mascot_studio_hero.jpg';
+                  }}
                   alt="Mascote de capacete preto e jaqueta verde operando o estúdio de animação 2D com IA"
                   referrerPolicy="no-referrer"
-                  className="w-full h-auto object-cover transform hover:scale-[1.02] transition-transform duration-500"
+                  className="w-full h-full object-cover transform hover:scale-[1.02] transition-transform duration-500"
                   loading="eager"
                 />
 
